@@ -1,0 +1,31 @@
+<button>
+    <a routerLink="">Listar Ciclos</a>
+</button>
+<br>
+<br>
+<label for="data">Dono:</label>
+<input type="text" name="data" [(ngModel)]="ciclo.dono">
+<br>
+
+<label for="placamae">Placa Mae:</label>
+<input type="text" name="placamae" [(ngModel)]="ciclo.placamae">
+<br>
+
+<label for="processador">Processador:</label>
+<input type="text" name="processador" [(ngModel)]="ciclo.processador">
+<br>
+
+<label for="memoria">Memoria:</label>
+<input type="number" name="memoria" [(ngModel)]="ciclo.memoria">
+<br>
+
+<label for="armazenamento">Armazenamento:</label>
+<input type="text" name="armazenamento" [(ngModel)]="ciclo.armazenamento">
+<br>
+
+<label for="fonte">Fonte:</label>
+<input type="text" name="fonte" [(ngModel)]="ciclo.fonte">
+
+<br>
+<br>
+<button (click)="cadastrar()">Cadastrar</button>

@@ -1,0 +1,56 @@
+<!--
+    <p>listar works!</p>
+    <a routerLink="/ciclo/cadastrar">Cadastrar Ciclos</a>
+    <ul>
+        <li *ngFor="let ciclo of ciclos">
+            {{ ciclo._id }}
+        </li>
+    </ul>
+-->
+<button>
+    <a routerLink="/ciclo/cadastrar">Cadastrar Ciclos</a>
+</button>
+
+<button>
+    <a routerLink="/ciclo/excluir">Excluir Ciclo</a>
+</button>
+<br>
+<br>
+<table>
+    <thead>
+        <tr>
+            <th>#Id</th>
+            <th>Dono</th>
+            <th>Placa Mae</th>
+            <th>Processador</th>
+            <th>Memoria</th>
+            <th>Armazenamento</th>
+            <th>Fonte</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let ciclo of ciclos">
+            <td>
+                {{ ciclo._id }}
+            </td>
+            <td>
+                {{ ciclo.dono  }}
+            </td>
+            <td>
+                {{ ciclo.placamae }}
+            </td>
+            <td>
+                {{ ciclo.processador }}
+            </td>
+            <td>
+                {{ ciclo.memoria }}
+            </td>
+            <td>
+                {{ ciclo.armazenamento }}
+            </td>
+            <td>
+                {{ ciclo.fonte  }}
+            </td>
+        </tr>
+    </tbody>
+</table>

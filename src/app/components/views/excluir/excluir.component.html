@@ -1,0 +1,50 @@
+<button>
+    <a routerLink="">Listar Ciclos</a>
+</button>
+<br>
+<br>
+<table>
+    <thead>
+        <tr>
+            <th>#Id</th>
+            <th>Dono</th>
+            <th>Placa Mae</th>
+            <th>Processador</th>
+            <th>Memoria</th>
+            <th>Armazenamento</th>
+            <th>Fonte</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let ciclo of ciclos">
+            <td>
+                {{ ciclo._id }}
+            </td>
+            <td>
+                {{ ciclo.dono  }}
+            </td>
+            <td>
+                {{ ciclo.placamae }}
+            </td>
+            <td>
+                {{ ciclo.processador }}
+            </td>
+            <td>
+                {{ ciclo.memoria }}
+            </td>
+            <td>
+                {{ ciclo.armazenamento }}
+            </td>
+            <td>
+                {{ ciclo.fonte  }}
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+<h2>Excluir Computador</h2>
+<label for="id">Id:</label>
+<input type="text" name="id" [(ngModel)]="id" placeholder="ID">
+<br>
+<button (click)="deletar()">Deletar</button>
